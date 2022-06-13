@@ -14,10 +14,44 @@ h1 {
   color: #febd0d;
   font-size: 4rem;
 }
+.h1_web {
+  font-size: 2rem;
+  top: 28px;
+  position: relative;
+}
 h2 {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #febd0d;
 }
+.h2_emner {
+  background-color: #d904a0;
+}
+.link_text {
+  position: relative;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #febd0d;
+  top: -191px;
+  background-color: transparent;
+  font-size: 1.4rem;
+}
+p {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #febd0d;
+}
+
+img {
+  object-fit: cover;
+  max-width: 90%;
+  height: auto;
+}
+
+.text_content {
+  top: 15px;
+  position: relative;
+}
+
 .container_index {
+  position: relative;
   margin: 0 auto;
   max-width: 1200px;
   background-color: #d904a0;
@@ -32,6 +66,17 @@ h2 {
   background-color: #d904a0;
   margin-top: 4rem;
   text-align: center;
+}
+.container_web {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: #d904a0;
+  margin-top: 4rem;
+  text-align: center;
+}
+.heavy_forside {
+  object-fit: cover;
 }
 .tema_2 {
   position: relative;
@@ -62,6 +107,7 @@ h2 {
   color: black;
   background: none;
 }
+
 /* header */
 header {
   position: fixed;
@@ -150,5 +196,45 @@ nav p {
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 1fr 1fr;
     background-color: #000000;
+  }
+  .container_web {
+    background-color: #000000;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+  }
+
+  .text_content {
+    max-width: 50%;
+    top: 80px;
+    position: relative;
+  }
+  .text_container {
+    max-width: 60%;
+    top: 80px;
+    position: relative;
+  }
+  .image_content {
+    position: relative;
+    top: 50px;
+  }
+  .link_text {
+    font-size: 1.2rem;
+    top: -179px;
+  }
+
+  .container_om {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .mig {
+    position: relative;
+    top: 85px;
+  }
+  .cv {
+    position: relative;
+    top: 104px;
   }
 }

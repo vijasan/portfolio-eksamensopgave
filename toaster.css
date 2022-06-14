@@ -1,0 +1,73 @@
+.smiley {
+  position: absolute;
+  background: url(smileyface.svg);
+  width: 64px;
+  height: 64px;
+}
+.animated {
+  animation: flap 0.4s steps(4) infinite alternate, fly 10s linear infinite;
+}
+
+.smiley2 {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  background-image: url(smileyface2.svg);
+  background-color: transparent;
+}
+
+.tst1 {
+  animation: fly 10s 6s linear infinite;
+}
+.t1 {
+  animation: flap 0.2s steps(4) infinite alternate, fly 10s linear infinite;
+}
+.t2 {
+  animation: flap 0.2s steps(4) infinite alternate-reverse,
+    fly 16s linear infinite;
+}
+.t3 {
+  animation: flap 0.2s steps(4) infinite alternate, fly 24s linear infinite;
+}
+.p1 {
+  right: 10%;
+  top: -10%;
+}
+.p6 {
+  right: -2%;
+  top: -10%;
+}
+.p7 {
+  right: 10%;
+  top: -12%;
+}
+.p8 {
+  right: 20%;
+  top: -18%;
+}
+.p9 {
+  right: 30%;
+  top: -13%;
+}
+.p10 {
+  right: 40%;
+  top: -17%;
+}
+
+@keyframes flap {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -256px;
+  }
+}
+
+@keyframes fly {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-1600px, 1600px);
+  }
+}

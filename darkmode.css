@@ -1,0 +1,67 @@
+/* == Body styles == */
+/*
+  1. Tilføj forgrunds- og baggrundsfarve
+  2. Tilføj en transition på 1s
+*/
+body {
+  background: black;
+
+  transition: 1s;
+}
+
+/*
+  1. Byt rundt på forgrunds- og baggrundsfarve på klassen .dark
+*/
+body.dark {
+  background: #febd0d;
+  color: hsl(255 75% 95%);
+  transition: 1s;
+}
+
+/* Header / Banner styles */
+/*
+  1. Få <h1> og <button> til at stå ved siden af hinanden og brug justify-content til at skubbe dem væk fra hinanden
+  2. Tilføj forgrunds- og baggrundsfarve
+  3. Tilføj en transition på 1s
+*/
+.banner {
+  background-color: #d904a0;
+}
+.dark .banner {
+  background-color: #febd0d;
+}
+/*
+  1. Ændr evt. baggrundsfarve på banner, når body har klassen .dark
+  -> .dark .banner { ... }
+*/
+
+/* Button styles */
+.mode {
+  background: #d904a0;
+  transition: 1s;
+}
+.mode {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #febd0d;
+}
+
+.mode:hover {
+  background: #febd0d;
+  color: black;
+}
+
+/*
+  1. Ændr evt. baggrundsfarve, når body har klassen .dark
+  -> .dark .banner { ... }
+  2. Tilføj evt. en hover-effekt
+  -> .dark .mode:hover { ... }
+*/
+.dark .mode:hover {
+  background: black;
+  color: #febd0d;
+}
+
+.dark .mode {
+  background: #febd0d;
+  color: black;
+}

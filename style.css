@@ -37,6 +37,7 @@ h2 {
 p {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   color: #febd0d;
+  text-align: left;
 }
 .start {
   background-color: #febd0d;
@@ -79,9 +80,7 @@ img {
   margin-top: 4rem;
   text-align: center;
 }
-.heavy_forside {
-  object-fit: cover;
-}
+
 .tema_2 {
   position: relative;
   top: -189px;
